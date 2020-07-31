@@ -35,6 +35,20 @@ button {
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
+button:hover {
+    filter: brightness(95%);
+}
+
+/* Button looks like it is pressed in */
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    cursor: default;
+    filter: brightness(30%);
+}
+
 /* Media Query for Tablet or Smaller */
 @media screen and (max-width: 500px) {
     .container {
